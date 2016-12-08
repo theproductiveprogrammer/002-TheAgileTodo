@@ -1,3 +1,5 @@
 # Ignore dotfiles as they are normally hidden
 # (force add with -f if really needed)
 .*
+nimcache/
+todochk
