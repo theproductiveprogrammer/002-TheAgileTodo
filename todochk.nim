@@ -1,121 +1,181 @@
-## The Agile TODO List
+## Agile TODO's
 ##
 
-## https://youtu.be/-4S6UPH5lSU
+## https://youtu.be/B67DVkJRdpQ
 
-## I don't know about you but I
-## often look back at code I
-## have written and feel bad
-## about it.
+## We all write great code!
+
+## We work hard, carve out the
+## best data structures, polish
+## shiny, powerful abstractions,
+## and ensure all the devilish
+## details of getting it just
+## right are coded. Hey it's a
+## hard job but someone's gotta
+## do it.
+
+## And because of all the effort
+## we put in to get it done
+## through the sweat of our brow
+## we are rightly proud of our
+## efforts and of our marvelous
+## creations...
+
+
+## ...until we aren't that is...
 
 ##  it-wasnt-me.png
 
-## Why is this? I had always
-## accepted this as something
-## that happened but then I
-## began to wonder _why_.
+## Our once beautiful creations
+## are far too often skewed into
+## ugly, embarrassing eyesores
+## festooned with barnacles.
+## Looking at the code we were
+## once so proud of, we can
+## scarcely remember why we were
+## once proud of this
+## scab-infested monstrosity.
+
+## This is a frustrating and
+## common phenomenon among
+## software engineers. In other
+## words, it's just "the way
+## things are".
+
+## The last time this happened
+## to me was on some [href=https://nodejs.org](Node.js)
+## code I had written for an
+## internal slideshow app. When
+## I first wrote it, it had
+## seemed so beautiful, but when
+## I went to make the latest
+## changes I realized I wasn't
+## very happy with the code
+## anymore.
+
+## So I sat down to figure out
+## what the problem could be...
 
 ##  why.png
 
-## One of the problems, I have
-## found, is there are actually
-## _two_ distinct stages while
-## writing code:
-##
-##  (1) The design is clear and
-##  the approach we have started
-##  with can be accomplished and
-##  we are only having fun
-##  "translating" it into
-##  working code.
-##  (2) The design is breaking
-##  down (or we don't have one)
-##  and we are "exploring" how to
-##  solve the problem.
+## And I struck upon a reason
+## this could happen. I'm not
+## sure it's the only reason or
+## the best but it's definitely
+## a major contributor. And the
+## reason is:
 
-## Now I don't know about you
-## but if I am under pressure
-## for delivery I usually
-## reach stage (2) very quickly.
-## I _know_ I can do better but
-## I just don't have the time
-## right now. I'm sure you've
-## faced this situation and so
-## has everyone in your team.
+## *_Being in a Hurry!_*
+
+## Now I understand that being
+## in a hurry is inevitable -
+## deadline pressures, Friday
+## night parties, screaming
+## customers, or just feeling
+## fed up are just some of the
+## reasons we are in a hurry to
+## finish. And these are
+## perfectly valid reasons. All
+## I'm saying is it _explains_ why
+## our once beautiful code is
+## now warty and pimply and
+## beginning to creak and sag.
 
 ## So just what should we do?
+## Should we just accept that
+## this will never change and
+## that code will get older and
+## more horrible? Should we
+## force ourselves to always
+## slow down and make sure we
+## release wonderful code at
+## every point? Well perhaps -
+## but in the cases where we
+## just have to go with the
+## quick-and-dirty here is a
+## suggestion you may want to
+## try with your team:
 
-## *_Enter the humble TODO_*
-## A simple, powerful, solution
-## is to use the humble TODO
-## marker. Everyone stumbles
-## into this solution as we can
-## see from the bewildering
-## variety of TODO markers
-## found in the wild:
+## *__Enter the humble TODO__*
+## A neat and simple solution
+## to when you are in a hurry is
+## to use the humble TODO
+## marker. This solution has two
+## parts:
+##
+## *___The Solution
+##  (1) When in a hurry _always_
+##  drop a TODO marker with a
+##  short description of what
+##  you aren't doing that could
+##  have been done better.
+##
+##  (2) When refactoring use
+##  these TODO markers as
+##  starting points and clean
+##  them up.
+## ___*
 
-#Todo markers
+## Almost everybody stumbles
+## into the first part of this solution.
+## We know this from the
+## bewildering variety of TODO
+## markers we see in the wild:
 
-## Because it is such a common
-## solution we should be able to
-## make use of it strategically
-## in our teams. Here is a
-## suggestion for how we could
-## approach this for the most
-## productive output.
-##
-## * Get as clear about the
-## design as you can, then code
-## that out as fast as you can
-## to get to completion.
-##
-## * When there is the slightest
-## doubt about needing to spend
-## time on coding rather than
-## completing, simply write a
-## TODO marker _along with the
-## reason_ and proceed.
-##
-## This simple strategy of using
-## TODO's effectively segregates
-## the code into code that the
-## developer is happy with and
-## code that the developer is
-## not happy with.
-##
-## This means, whenever we want
-## to spend time refactoring, we
-## now have a nice place to
-## start - not only do we have a
-## point (the TODO) but we
-## usually have some starting
-## reason as well (the TODO
-## comment).
-##
+## *____TODO TO_DO TO DO FIXME
+## FIX_ME FIX ME XXX ZZX HACK
+## !!! ???  TOFIX TO_FIX TO FIX
+## ISSUE NOTE REVISIT____*
 
-## *__The Write Only Problem__*
-## The problem with the TODO
-## list, as we all know, is that
-## it becomes a "write only
-## list" of items that are
-## seldom taken up or corrected.
-## So what can we do? A simple
-## start would be to measure the
-## turnover of TODO's in the
-## code and strive to keep that
-## at a reasonable level.
+## I found an interesting paper
+## that seems to confirm this.
+## [href=https://www.researchgate.net/publication/221555589_TODO_or_to_bug_exploring_how_task_annotations_play_a_role_in_the_work_practices_of_software_developers](TODO or To Bug: Exploring
+## How Task Annotations Play a
+## Role in the Work Practices of
+## Software Developers).
 
-## How do we measure turnover?
-## We simply check the number of
-## TODO's added and the number
-## of TODO's removed in the
-## version history log. The
-## turnover is then:
+
+## Therefore all we have to do
+## is to be a bit more
+## structured in the way we use
+## our TODO's and make sure they
+## don't face the "write-only"
+## list problem.
+
+## In other words:
+
+## *_____Keep our TODO's Agile!_____*
+
+## Q: What can we do to help this?
+## A: A simple start would be to
+## measure the turnover of
+## TODO's in the code and strive
+## to keep that at a reasonable
+## level.
+
+## Q: How should we measure turnover?
+## A: Check the number of TODO's
+## added and the number of
+## TODO's removed in the version
+## history log. The turnover is
+## then:
 ##
 ##                removed
 ##    turnover = -------- x 100
 ##                 added
 ##
+
+## I've tried measuring turnover
+## on a few projects and have
+## got turnovers ranging from
+## 87% to 31% (and 0% for no
+## TODO's) which gave me a good
+## indication of which projects
+## were doing well with their
+## TODO's and which were not.
+
+## Try it out yourself and see
+## if if works for you.
 
 ## The rest of this file
 ## generates a quick and simple
@@ -123,6 +183,13 @@
 ## on the TODO turnover which
 ## you can use for your team.
 ##
+
+## NB: It is written in [href=http://nim-lang.org/](Nim) and
+## the nim IPC is a bit slow so
+## the result can be sped up so
+## ping me if you would like it
+## optimized. Or, in other words -
+## *TODO:* Optimize? :-)
 
 import osproc, nre, streams, strutils
 
